@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- bootStrap css -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+        <!-- my css -->
+        <link rel="stylesheet" href="styles.css">
+        <title>Prcrastinators Therapist</title>
+    </head>
+    
+    <body>
+
+        <!-- dead nav bar for eye candy-->
+        <nav class="navbar navbar-light bg-light flex-row">
+            <a class="navbar-brand align-content-center">
+                <img src="/Images/list-alt-regular.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                Procastinators Therapist
+            </a>
+            <a id="shake">
+                "To do, or not to do, that is the question" - The Procastinator
+            </a>
+        </nav>
+
+        <!-- form -->
+        <div class="container">
+            <div class="row">
+                <div class="col mainDisplay">
+                    <form name="thisForm" id="thisForm">
+                        <h2 class="inputText">Input your task that needs to be completed... eventually!!</h2>
+                        <div class="mb-2">
+                            <label for="nameForm" class="form-label">Name:</label>
+                            <input type="text" name="nameForm" class="form-control" id="nameForm" required>
+                            <div id="nameError"></div>
+                        </div>
+                        <div class="mb-2">
+                            <label for="descriptionForm" class="form-label">Description:
+                            </label>
+                            <input type="text" name="Description" class="form-control" id="Description" required>
+                            <div id="descriptionError"></div>
+                        </div>
+                        <div class="mb-2">
+                            <label for="assignForm" class="form-label">Assigned To:
+                            </label>
+                            <input type="text" name="assignForm" class="form-control" id="assignForm" required>
+                            <div id="assignError"></div>
+                        </div>
+                        <div class="mb-2">
+                            <label for="dateForm" class="form-label">Due Date:</label>
+                            <input type="date" name="dateForm" class="form-control" id="dateForm" placeholder="DD/MM/YYYY" required>
+                            <div id="dateError"></div>
+                        </div>
+                        <div class="mb-2">
+                            <label for="statusForm" class="form-label">Status:</label>
+                            <select class="form-select" id="statusForm">
+                                <option>To Do</option>
+                                <option>In Progress</option>
+                                <option>Review</option>
+                                <option>Done</option>
+                            </select>
+                            <div id="statusError"></div>
+                        </div>
+                        <button type="button" id="submit" class="btn btn-primary form-control" >Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- small card list -->
+        <div class="container">
+            <div class="row">
+                <h1 class="taskHeader2">Task List</h1>
+            </div>
+        <div class="row">
+            <div class="container list-card">
+                <ul class="list-group " id="listSection">
+                </ul>
+            </div>
+        </div>
+
+        <!-- large cards -->
+        <div class="container">
+            <div class="row" id="largeCardsSection"> 
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>

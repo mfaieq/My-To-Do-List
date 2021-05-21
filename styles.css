@@ -1,0 +1,82 @@
+/* background Colour */
+body {
+    /* from a background color gen */
+    background: rgb(167, 207, 223);
+    background: -moz-linear-gradient(top, rgba(167,207,223,1) 0%, rgba(35,83,138,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+    background: linear-gradient(to bottom, rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=0);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* nav bar */
+nav img {
+    margin-left: 2rem;
+}
+#shake {
+    padding-right: 2rem;
+}
+
+
+/* main card */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.mainDisplay {
+    background-color: white;
+    border-radius: 0.6rem;
+    display: flex;
+    margin-top: 1.5rem;
+    flex-direction: column;
+}
+
+.inputText {
+    text-align: center;
+}
+
+form {
+    padding: 2rem;
+}
+
+
+/* task list */
+.taskHeader2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.card {
+    margin: 0.5rem;
+}
+
+.list-card {
+    margin-bottom: 2.5rem;
+}
+
+li {
+    text-align: center;
+}
+
+.btn-container{
+    text-align: center;
+}
+
+
+
+/* Media */
+@media only screen and(max-width: 767px) {
+    .createTaskTitle {
+        font-size: 20px;
+    }
+
+    #shake {
+        display: none;
+    }
+
+}
